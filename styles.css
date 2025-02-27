@@ -1,0 +1,152 @@
+/* Base Styles */
+body { 
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+  
+/* Header & Search */
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+#searchInput {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+/* Categories Navigation */
+.categories {
+    margin-bottom: 20px;
+}
+  
+.category-btn {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    background-color: #0400ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.category-btn:hover {
+    background-color: #0000cc;
+}
+  
+/* Projects Grid */
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* Project Card */
+.project-card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: left;
+}
+  
+.project-card:hover {
+    transform: scale(1.03);
+}
+  
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.project-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+  
+.project-card a {
+    color: #0400ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Project Submission Section */
+#project-submission {
+    background: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+  
+#project-submission h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+  
+#submitProjectForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+#submitProjectForm input,
+#submitProjectForm select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* New addition for the textarea */
+#submitProjectForm textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+    resize: vertical;
+}
+  
+#submitProjectForm button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #0400ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+#submitProjectForm button:hover {
+    background-color: #0000cc;
+}
